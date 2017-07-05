@@ -31,9 +31,15 @@ gem 'puma'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-rails'
 gem 'money-rails'
+
+# This gem provides a simple and extremely flexible way to upload files from Ruby applications.
 gem 'carrierwave'
+
+# RMagick is an interface between the Ruby programming language and the ImageMagick image processing library.
 gem 'rmagick'
 gem 'stripe'
+
+# A library for generating fake data such as names, addresses, and phone numbers.
 gem 'faker'
 
 # Use Capistrano for deployment

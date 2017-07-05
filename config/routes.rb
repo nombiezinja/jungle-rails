@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+# this is a hash with key and value
   root to: 'products#index'
 
   resources :products, only: [:index, :show]

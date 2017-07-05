@@ -20,12 +20,28 @@ main section.categories-show {
       margin-top:    20px;
       // margin:        10px;
 
-      header img {
-        max-width: 100%;
-        max-height: 140px;
-        margin: auto;
-        display: block;
+      header {
+
+        img {
+          max-width: 100%;
+          max-height: 140px;
+          margin: auto;
+          display: block;
+          z-index: 1;
+        }
+        .sold-out-badge {
+          color: white;
+          background-color: lightpink;
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 10px;
+          border-top-left-radius: 4px;
+          border-bottom-right-radius: 20px;
+          font-size: 1em;
+        }
       }
+
 
       footer {
         position: absolute;
