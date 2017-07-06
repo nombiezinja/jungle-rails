@@ -13,4 +13,5 @@ class Product < ActiveRecord::Base
   def sold_out?
     quantity == 0
   end
+
 end
