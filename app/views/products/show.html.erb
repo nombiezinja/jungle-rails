@@ -4,7 +4,7 @@
     <h1><%= link_to @product.category.name, @product.category %> &raquo; <%= @product.name %></h1>
   </header>
 
-  <article class="product-detail">
+  <article class="product-detail border-1">
 
     <div class="row">
 
@@ -24,6 +24,24 @@
           <dd><%= @product.price %></dd>
         </dl>
       </div>
+
+    </div>
+
+
+    <div class="row">
+    <div class="col-sm-4">
+      <%= form_for([@product, @new_review]) do |f| %>
+        <p><%= f.text_area(:description) %></p>
+        <p><%= f.submit %></p>
+      <% end %>
+    </div>
+    <div class="col-sm-8 pull-right">
+        <ul class="list-group">
+          <% @reviews.each do |review| %>
+          <%= render 'review', review: review %>
+            <% end %>
+        </ul>
+    <div>
     </div>
 
   </article>

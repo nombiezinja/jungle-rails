@@ -1,0 +1,9 @@
+<li class="list-group-item">
+  <h4 class="text-left"><%= review.user.name %></h4><p class="text-left"><%= review.created_at %></p>
+  <p><%= review.description %></p>
+  <span class="rating">
+  <% (1..review.rating).each do %>
+    <%= fa_icon "leaf" %>
+  <% end %>
+  </span>
+</li>
