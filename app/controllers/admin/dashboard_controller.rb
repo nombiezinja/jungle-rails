@@ -6,7 +6,4 @@ class Admin::DashboardController < ApplicationController
   #   super
   # end
 
-  def
-    # admin_authenticate
-  end
 end
