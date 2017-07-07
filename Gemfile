@@ -50,7 +50,9 @@ group :development, :test do
   gem 'byebug'
   gem 'quiet_assets'
   gem 'dotenv-rails'
+
 end
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
@@ -58,6 +60,8 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'letter_opener'
+  gem 'letter_opener_web'
 end
 
 group :production do

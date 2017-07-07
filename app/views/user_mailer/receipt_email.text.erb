@@ -1,0 +1,10 @@
+Hello friend,
+Thank you for your order with Jungle.
+Here are the details of your order:
+
+Order #<%= @order.id %>
+<% @order.line_items.each do |item| %>
+  Product: <%= item.product.name %> || Price: <%= item.product.price %>
+<% end %>
+Total: $<%= @order.total%>CAD
+
