@@ -44,11 +44,12 @@
       <% end %>
 
         <div class="form-group">
-        <%= f.label :description %>
-        <%= f.text_field :description, class: 'form-control' %>
-        <%= f.label :rating %>
-          <%= f.select :rating, [ '1','2','3','4','5' ], class: 'form-control', :prompt => 'Select One' %>
-        <%= f.submit 'Submit Review', class: 'btn btn-primary' %>
+        <div><%= f.label :description %></div>
+        <div><%= f.text_field :description, class: 'form-control' %></div>
+        <div><%= f.label :rating %></div>
+        <div class="dropdown"><%= f.select :rating, [ '1','2','3','4','5' ], class: 'form-control', :prompt => 'Select One' %></div>
+        <br>
+        <div><%= f.submit 'Submit Review', class: 'btn btn-primary' %></div>
         </div>
       <% end %>
     </div>

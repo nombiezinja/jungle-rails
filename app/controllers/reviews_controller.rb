@@ -16,11 +16,12 @@ class ReviewsController < ApplicationController
     else
       redirect_to @product, notice: 'Review was not created.'
     end
-
   end
 
   def destroy
+    @review = Review.find params[:product_id]
     @review.destroy
+    @product = Product.find params[:id]
     redirect_to @product, notice: 'Review deleted!'
   end
 

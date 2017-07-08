@@ -8,6 +8,15 @@
 </head>
 <body>
 
+
+  <div class="container">
+    <h4>
+    <% if notice %>
+      <%= notice %>
+    <% end %>
+    </h4>
+  </div>
+
   <%= render 'layouts/top_nav' %>
 
   <main class="container">

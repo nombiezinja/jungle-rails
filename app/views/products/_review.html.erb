@@ -6,4 +6,5 @@
     <%= fa_icon "leaf" %>
   <% end %>
   </span>
+  <%= link_to fa_icon('trash'), product_review_path(review, @product), class: 'btn btn-sm btn-danger pull-right', method: :delete, data: { confirm: "Are you sure?" } %>
 </li>
