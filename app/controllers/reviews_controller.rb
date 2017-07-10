@@ -29,11 +29,10 @@ class ReviewsController < ApplicationController
 
   def review_params
     params.require(:review).permit(
-      :product_id,
-      :user_id,
       :description,
       :rating
     )
+
   end
 
 end

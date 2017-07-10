@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     put    :add_item
     delete :remove_item
   end
-
+  resources :contacts
   resources :orders, only: [:create, :show]
 
   namespace :admin do
@@ -30,7 +30,8 @@ Rails.application.routes.draw do
   #   destroy :'session#destroy'
   # end
 
-  get '/login' => 'sessions#new'
+  # get '/login' => 'sessions#new'
+  get '/login', to: 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
 
