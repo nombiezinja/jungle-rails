@@ -4,10 +4,10 @@ A light-weight e-commerce application built with Rails 4.2.
 
 ## Features
 
-Admins can sign in using basic HTTP authentication, then add/remove products and categories.
-Users can register, log in, post/delete product reviews, and make purchases (test credit card only), receipts are emailed to the email used to register.
-Users can add product to cart and checkout without logging in.
-Users can view reviews without logging in, but will be prompted to log in when they try to post a review.
+*Admins can sign in using basic HTTP authentication, then add/remove products and categories.
+*Users can register, log in, post/delete product reviews, and make purchases (test credit card only), receipts are emailed to the email used to register.
+*Users can add product to cart and checkout without logging in.
+*Users can view reviews without logging in, but will be prompted to log in when they try to post a review.
 
 ## Interface
 
